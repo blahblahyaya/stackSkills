@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  sampleOne
+//  sampleOne by Andy Roberts
 //
 //  Created by Andy Roberts (Contractor) on 2/10/17.
 //  Copyright © 2017 Andy Roberts. All rights reserved.
