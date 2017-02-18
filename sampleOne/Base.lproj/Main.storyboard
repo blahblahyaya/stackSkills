@@ -37,10 +37,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PTV-Ld-hSU">
+                                <rect key="frame" x="139" y="246" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="m4Q-FE-nfQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ki-zp-BsB">
+                                <rect key="frame" x="139" y="309" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9vH-bV-qHi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7m-OC-sci">
-                                <rect key="frame" x="42" y="258" width="46" height="30"/>
+                                <rect key="frame" x="24" y="441" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Count Button"/>
                                 <connections>
                                     <action selector="button2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0r-6F-qwX"/>
                                 </connections>
@@ -48,14 +66,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CLc-qu-syl" firstAttribute="top" secondItem="osU-ud-wOF" secondAttribute="bottom" constant="100" id="962-UL-oQK"/>
+                            <constraint firstItem="CLc-qu-syl" firstAttribute="top" secondItem="osU-ud-wOF" secondAttribute="bottom" constant="52" id="962-UL-oQK"/>
                             <constraint firstItem="CLc-qu-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xT-gp-Ni3"/>
+                            <constraint firstItem="9Ki-zp-BsB" firstAttribute="top" secondItem="PTV-Ld-hSU" secondAttribute="bottom" constant="33" id="AxB-hE-2VP"/>
                             <constraint firstItem="8dx-rW-wmu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ek2-s3-lEA"/>
+                            <constraint firstItem="PTV-Ld-hSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RbL-fg-DZu"/>
+                            <constraint firstItem="9Ki-zp-BsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z0M-gH-KWK"/>
+                            <constraint firstItem="PTV-Ld-hSU" firstAttribute="top" secondItem="8dx-rW-wmu" secondAttribute="bottom" constant="36" id="ZnY-A0-WkV"/>
                             <constraint firstItem="8dx-rW-wmu" firstAttribute="top" secondItem="CLc-qu-syl" secondAttribute="bottom" constant="20.5" id="aZi-cj-kpl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="CLc-qu-syl" id="j3v-eA-4a0"/>
+                        <outlet property="text1" destination="PTV-Ld-hSU" id="UzX-nU-0Wk"/>
+                        <outlet property="text2" destination="9Ki-zp-BsB" id="dss-aO-ayd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
